@@ -14,13 +14,13 @@ const LoginPage = () => {
   const { login, isLoggingIn } = useAuthStore();
 
   const validateForm = () => {
-    if (!formData.email.trim()) return toast.error("Email is required");
+    if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) return toast.error("Email is required");
     if (!formData.password) return toast.error("Password is required");
 
     return true;
   };
 
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault();
 
     const success = validateForm();
