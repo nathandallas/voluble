@@ -26,7 +26,7 @@ const SignUpPage = () => {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       errors.push("Invalid email format");
     }
-    
+
     if (!formData.password) errors.push("Password is required");
     else if (formData.password.length < 6) errors.push("Password must be at least 6 characters");
 
@@ -155,7 +155,7 @@ const SignUpPage = () => {
 
       <AuthImagePattern
         title="Join our community"
-        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
+        subtitle="Connect and share with friends!"
       />
     </div>
   );
