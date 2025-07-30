@@ -1,3 +1,8 @@
+import User from "../models/user.model.js";
+import Message from "../models/message.model.js";
+
+import cloudinary from "../lib/cloudinary.js";
+
 export const getUsersforSidebar = async (req, res) => {
   try {
     const loggedInUserId = req.user._id; // Get the logged-in user's ID from the request object
