@@ -8,13 +8,13 @@ import toast from "react-hot-toast";
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
-    email: "",
+    identifier: "",
     password: "",
   });
   const { login, isLoggingIn } = useAuthStore();
 
   const validateForm = () => {
-    if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) return toast.error("Email is required");
+    if (!formData.identifier) return toast.error("Email or Username is required");
     if (!formData.password) return toast.error("Password is required");
 
     return true;
@@ -50,18 +50,18 @@ const LoginPage = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-medium">Email</span>
+                <span className="label-text font-medium">Email or Username</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <Mail className="h-5 w-5 text-base-content/40" />
                 </div>
                 <input
-                  type="email"
+                  type="identifier"
                   className={`input input-bordered w-full pl-10`}
                   placeholder="you@example.com"
-                  value={formData.email}
-                  onChange={e => setFormData({ ...formData, email: e.target.value })}
+                  value={formData.identifier}
+                  onChange={e => setFormData({ ...formData, identifier: e.target.value })}
                 />
               </div>
             </div>
