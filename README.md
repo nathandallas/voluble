@@ -1,2 +1,44 @@
-# voluble
-# voluble
+# Voluble
+(vol·​u·​ble) *adj.* characterized by ready or rapid speech
+
+This real-time chat application utilizes web sockets in React to connect you with your friends instantly! Upload a profile picture, customize your theme and start a conversation. 
+
+## Technologies
+ 
+ - MongoDB, Express, React, and Node
+ - Authentication && Authorization with JWT
+ - Real-time messaging with Socket.io
+ - Global state management with Zustand
+ - Cloudinary Media Management
+ - TailwindCSS + Daisy UI
+
+## Preview
+
+![Voluble Home Page](https://i.imgur.com/17jaMoZ.png)
+![Voluble Chat](https://i.imgur.com/6PYfMlp.png)
+![Voluble Theme Changer](https://i.imgur.com/NC2FiDY.png)
+
+<!-- ## Deployment
+
+Check out the live website here:  -->
+
+## How to Install
+
+```sh
+git clone https://github.com/nathandallas/voluble.git
+cd frontend
+npm install
+npm run dev
+
+cd ../backend
+npm install
+npm run dev
+```
+
+Open http://localhost:5173/ 
+
+## Future Plans
+
+- Update Credentials
+- Advanced file sharing
+- Groups and Chat Rooms
