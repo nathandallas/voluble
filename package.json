@@ -1,0 +1,22 @@
+{
+  "name": "voluble",
+  "version": "1.0.0",
+  "description": "A modern chat application built with React, Node.js, and Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathandallas/voluble.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nathandallas/voluble/issues"
+  },
+  "homepage": "https://github.com/nathandallas/voluble#readme"
+}
