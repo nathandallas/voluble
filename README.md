@@ -24,21 +24,21 @@ Check out the live website here:  -->
 
 ## How to Install
 
-```sh
-git clone https://github.com/nathandallas/voluble.git
-cd frontend
-npm install
-npm run dev
+### Build the app
 
-cd ../backend
-npm install
-npm run dev
+```shell
+npm run build
 ```
 
-Open http://localhost:5173/ 
+### Start the app
+
+```shell
+npm start
+```
 
 ## Future Plans
 
-- Update Credentials
+- View other users' profiles
+- Update your credentials + delete account
 - Advanced file sharing
-- Groups and Chat Rooms
+- Groups and chat rooms

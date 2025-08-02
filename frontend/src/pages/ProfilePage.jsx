@@ -47,12 +47,12 @@ const ProfilePage = () => {
                 htmlFor="avatar-upload"
                 className={`
                   absolute bottom-0 right-0 
-                  bg-base-content hover:scale-105
+                  bg-accent hover:scale-105
                   p-2 rounded-full cursor-pointer 
                   transition-all duration-200
                   ${isUpdatingProfile ? "animate-pulse pointer-events-none" : ""}
                 `}>
-                <Camera className="w-5 h-5 text-base-200" />
+                <Camera className="w-5 h-5 text-primary-content" />
                 <input
                   type="file"
                   id="avatar-upload"
@@ -63,21 +63,21 @@ const ProfilePage = () => {
                 />
               </label>
             </div>
-            <p className="text-sm text-zinc-400">{isUpdatingProfile ? "Uploading..." : "Click the camera icon to update your photo"}</p>
+            <p className="text-sm text-base-content">{isUpdatingProfile ? "Uploading..." : "Click the camera icon to update your photo"}</p>
           </div>
 
           <div className="space-y-6">
             <div className="space-y-1.5">
-              <div className="text-sm text-zinc-400 flex items-center gap-2">
-                <User className="w-4 h-4" />
+              <div className="text-sm text-base-content flex items-center gap-2">
+                <User className="w-4 h-4 text-primary" />
                 Username
               </div>
               <p className="px-4 py-2.5 bg-base-200 rounded-lg border">{authUser?.username}</p>
             </div>
 
             <div className="space-y-1.5">
-              <div className="text-sm text-zinc-400 flex items-center gap-2">
-                <Mail className="w-4 h-4" />
+              <div className="text-sm text-base-content flex items-center gap-2">
+                <Mail className="w-4 h-4 text-primary" />
                 Email Address
               </div>
               <p className="px-4 py-2.5 bg-base-200 rounded-lg border">{authUser?.email}</p>
@@ -93,7 +93,7 @@ const ProfilePage = () => {
               </div>
               <div className="flex items-center justify-between py-2">
                 <span>Account Status</span>
-                <span className="text-green-500">Active</span>
+                <span className="text-primary">Active</span>
               </div>
             </div>
           </div>
