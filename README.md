@@ -21,7 +21,7 @@ This real-time chat application utilizes web sockets in React to connect you wit
 
 ## Deployment
 
-Check out the live website here: https://voluble-5gtx.onrender.com
+Check out the live website here: https://voluble-flax.vercel.app/
 
 ## How to Install
 
