@@ -1,5 +1,5 @@
 import { MessageSquare } from "lucide-react";
-import { useAuthStore } from "../store/useAuthStore";
+import { useAuthStore } from "../store/useAuthStore.js";
 
 const NoChatSelected = () => {
 const { authUser } = useAuthStore();
